@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Pemain Timnas Indonesia by Perdana</title>
+    <link rel="icon" type="image/png" href="icon.webp"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="quiz-container">
+            <div class="header">
+                <span>❤️ <span id="lives">3</span></span>
+                <h1>Tebak Pemain Timnas Indonesia</h1>
+                <span>💎 <span id="score">0</span></span>
+            </div>
+            
+            <img id="player-image" src="" alt="Gambar Pemain">
+            <div id="options-container"></div>
+            
+            <p id="feedback"></p>
+            <button id="next-btn" onclick="nextQuestion()" disabled>Soal Berikutnya</button>
+        </div>
+    </div>
+    
+    <audio id="correct-sound" src="music/siuu.mp3"></audio>
+    <audio id="wrong-sound" src="music/noo.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
